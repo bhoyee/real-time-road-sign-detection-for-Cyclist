@@ -49,3 +49,37 @@ Darknet (Follow the instructions in the Darknet repository: https://github.com/A
 
 9. Once the training is complete and you have satisfactory results, select the final weights file generated in the `backup` directory for inference.
 
+## Usage
+
+1. Place the final weights file (`yolov4_custom.weights`) in the same directory as the code.
+
+2. Update the `yolov4_custom.cfg` file and `custom_data.names` file paths in the code if necessary.
+
+3. Install the required dependencies:
+   - Install OpenCV by running `pip install opencv-python`.
+   - Install NumPy by running `pip install numpy`.
+   - Install pyttsx3 by running `pip install pyttsx3`.
+
+4. Run the script using `python <filename.py>`.
+
+5. The PC camera will open, and the video stream will start.
+
+6. The script will detect road signs in real-time and display the processed video frames with bounding boxes and labels.
+
+7. When road signs are detected, a text-to-speech notification will be spoken, announcing the type of sign(s) detected.
+
+8. To exit the program, press the 'q' key.
+
+Note: If you have multiple cameras connected, you can change the camera index in the `handle_video_stream` function by modifying the `cap = cv2.VideoCapture(0)` line. Set the appropriate index for your camera (e.g., 0 for the first camera, 1 for the second camera, and so on).
+
+## Customization
+
+- If you want to use a different YOLOv4 model, replace the `yolov4_custom.cfg` and `yolov4_custom.weights` files with your custom model files.
+- Modify the `classes` list in the code to match the class labels used in your custom YOLOv4 model.
+- Adjust the confidence threshold and other parameters in the `detect_objects` function to change the object detection sensitivity.
+
+Feel free to modify the code to suit your specific requirements and customize the behavior of the object detection and notification system.
+
+For more information on YOLOv4 and Darknet, refer to the Darknet repository and YOLOv4 paper:
+- Darknet repository: [https://github.com/AlexeyAB/darknet](https://github.com/AlexeyAB/darknet)
+- YOLOv4 paper: [https://arxiv.org/abs/2004.10934](https://arxiv.org/abs/2004.10934)
