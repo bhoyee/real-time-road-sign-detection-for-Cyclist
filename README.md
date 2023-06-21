@@ -3,15 +3,14 @@
 # This is Real-Time Object Detection with YOLOv4 and Text-to-Speech Notifications
 
 
+This project demonstrates real-time object detection using YOLOv4 and provides text-to-speech notifications when road signs are detected. The code includes steps for gathering a custom dataset, labeling the dataset, training the YOLOv4 model using Darknet, and running real-time object detection.
 
-This code demonstrates real-time object detection using YOLOv4 and provides text-to-speech notifications when road signs are detected. It captures video frames from the PC camera, performs object detection on each frame, and displays the processed frames with bounding boxes and labels.
-
-## Prerequisites
-
-- Python 3.x
-- OpenCV (`pip install opencv-python`)
-- NumPy (`pip install numpy`)
-- pyttsx3 (`pip install pyttsx3`)
+Prerequisites
+Python 3.x
+OpenCV (pip install opencv-python)
+NumPy (pip install numpy)
+pyttsx3 (pip install pyttsx3)
+Darknet (Follow the instructions in the Darknet repository: https://github.com/AlexeyAB/darknet)
 
 ## Setup
 
