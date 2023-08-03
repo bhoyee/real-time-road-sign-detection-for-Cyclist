@@ -1,6 +1,4 @@
-# This is a Real-time Road Sign Detection and Recognition for Cyclists using Deep Learning
-
-# This is Real-Time Object Detection with YOLOv4 and Text-to-Speech Notifications
+# Real time Road Sign Detection and Recognition for Cyclists using Deep Learning
 
 
 This project demonstrates real-time object detection using YOLOv4 and provides text-to-speech notifications when road signs are detected. The code includes steps for gathering a custom dataset, labeling the dataset, training the YOLOv4 model using Darknet, and running real-time object detection.
